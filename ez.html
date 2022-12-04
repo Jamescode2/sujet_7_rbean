@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo</title>
+    <link rel="stylesheet" href="ez.css">
+</head>
+
+<body>
+    <h1>Weather App</h1>
+    <div style="display: flex;width: 25%;">
+        <input type="text" style="padding:6px 5px" id="city" placeholder="Renseigner une ville">
+        <select class="form-control" id='select' style="padding:6px 5px" required>
+            <option selected value='1'>1 days</option>
+            <option value='2'>2 days</option>
+            <option value='3'>3 days</option>
+            <option value='4'>4 days</option>
+            <option value='5'>5 days</option>
+          </select>
+        <input type="button" onclick="readWeather()" class="btn btn-primary" value="Submit"
+            style="background-color: aqua;padding:6px 5px;cursor: pointer;">
+    </div>
+
+    <div style="display:none;justify-content: space-between;" id="afficheJour">
+        <div class="card">
+            <h2 id="jour1"></h2>
+            <img id="Temps1" alt="">
+        </div>
+        <div class="card">
+            <h2 id="jour2"></h2>
+            <img id="Temps2" alt="">
+        </div>
+        <div class="card">
+            <h2 id="jour3"></h2>
+            <img id="Temps3" alt="">
+        </div>
+        <div class="card">
+            <h2 id="jour4"></h2>
+            <img id="Temps4" alt="">
+        </div>
+        <div class="card">
+            <h2 id="jour5"></h2>
+            <img id="Temps5" alt="">
+        </div>
+    </div>
+    <script src="ez.js"></script>
+
+</body>
+
+</html>

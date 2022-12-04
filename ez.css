@@ -1,0 +1,40 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+    margin-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px rgb(53, 53, 153);
+    
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.card{
+    padding: 15px;
+    margin: 25px 10px;
+    /* border: 2px solid black; */
+}
+
+.card-body{
+    background-color: beige;
+    border-radius: 5px;
+    border: 2px solid black;
+}
