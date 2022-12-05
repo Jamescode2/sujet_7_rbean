@@ -260,8 +260,9 @@ function readWeather() {
                     console.log(reponse4);
                     let date = new Date();
                     let hours = date.getHours();
-                    console.log(typeof parseInt((reponse4.results.civil_twilight_begin.split(' ')[0]).split(':')[0]));
-                    if (hours >= parseInt((reponse4.results.civil_twilight_begin.split(' ')[0]).split(':')[0]) && hours <= parseInt((reponse4.results.civil_twilight_begin.split(' ')[0]).split(':')[0])) {
+                    if (hours >= parseInt((reponse4.results.civil_twilight_begin.split(' ')[0]).split(':')[0]) && hours <= 12) {
+                        console.log(parseInt((reponse4.results.civil_twilight_begin.split(' ')[0]).split(':')[0]));
+                        console.log(hours);
                         document.body.style.backgroundColor = 'aquamarine';
                     }
                     if (hours < parseInt((reponse4.results.civil_twilight_begin.split(' ')[0]).split(':')[0])) {
@@ -309,7 +310,7 @@ function readWeather() {
                         default:
                             break;
                     }
-                    if (hours >= 13 && hours <= heure) {
+                    if (hours > 12 && hours <= heure) {
                         document.body.style.backgroundColor = 'aquamarine';
                     }
                     if (hours > heure) {
